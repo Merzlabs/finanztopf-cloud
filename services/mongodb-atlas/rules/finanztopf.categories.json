@@ -1,0 +1,21 @@
+{
+    "database": "finanztopf",
+    "collection": "categories",
+    "roles": [
+        {
+            "name": "default",
+            "apply_when": {},
+            "fields": {
+                "creditorName": {},
+                "id": {},
+                "remittanceInformation": {},
+                "title": {}
+            },
+            "read": true,
+            "insert": true,
+            "delete": false,
+            "additional_fields": {}
+        }
+    ],
+    "schema": {}
+}
