@@ -3,19 +3,62 @@
     "collection": "categories",
     "roles": [
         {
-            "name": "default",
-            "apply_when": {},
+            "name": "owner",
+            "apply_when": {
+                "owner": "%%user.id"
+            },
             "fields": {
                 "creditorName": {},
-                "id": {},
                 "remittanceInformation": {},
                 "title": {}
             },
             "read": true,
+            "write": true,
             "insert": true,
+            "delete": true,
+            "additional_fields": {}
+        },
+        {
+            "name": "non-owner",
+            "apply_when": {},
+            "fields": {
+                "creditorName": {
+                    "read": true
+                },
+                "remittanceInformation": {
+                    "read": true
+                },
+                "title": {
+                    "read": true
+                }
+            },
+            "write": false,
+            "insert": false,
             "delete": false,
             "additional_fields": {}
         }
     ],
-    "schema": {}
+    "schema": {
+        "title": "category",
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "creditorName": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            },
+            "id": {
+                "bsonType": "string"
+            },
+            "sum": {
+                "bsonType": "int"
+            },
+            "title": {
+                "bsonType": "string"
+            }
+        }
+    }
 }
