@@ -30,6 +30,9 @@
                 },
                 "title": {
                     "read": true
+                },
+                "id": {
+                    "read": true
                 }
             },
             "write": false,
