@@ -5,23 +5,30 @@
         {
             "name": "owner",
             "apply_when": {
-                "owner": "%%user.id"
+              "owner": "%%user.id"
             },
-            "fields": {
-                "creditorName": {},
-                "remittanceInformation": {},
-                "title": {},
-                "active": {
-                    "read": true,
-                    "write": false
-                }
-            },
-            "read": true,
-            "write": true,
             "insert": true,
             "delete": true,
-            "additional_fields": {}
-        },
+            "read": true,
+            "fields": {
+              "active": {},
+              "creditorName": {
+                "write": true
+              },
+              "remittanceInformation": {
+                "write": true
+              },
+              "title": {
+                "write": true
+              },
+              "id": {
+                "write": true
+              }
+            },
+            "additional_fields": {
+              "write": true
+            }
+          },
         {
             "name": "non-owner",
             "apply_when": {},
