@@ -10,7 +10,10 @@
             "fields": {
                 "creditorName": {},
                 "remittanceInformation": {},
-                "title": {}
+                "title": {},
+                "active": {
+                    "read": true
+                }
             },
             "read": true,
             "write": true,
@@ -32,6 +35,9 @@
                     "read": true
                 },
                 "id": {
+                    "read": true
+                },
+                "active": {
                     "read": true
                 }
             },
@@ -61,6 +67,9 @@
             },
             "title": {
                 "bsonType": "string"
+            },
+            "active": {
+                "bsonType": "boolean"
             }
         }
     }
