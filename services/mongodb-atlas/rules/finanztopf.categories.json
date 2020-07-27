@@ -12,7 +12,8 @@
                 "remittanceInformation": {},
                 "title": {},
                 "active": {
-                    "read": true
+                    "read": true,
+                    "write": false
                 }
             },
             "read": true,
