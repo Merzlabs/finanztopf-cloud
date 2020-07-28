@@ -3,71 +3,28 @@
     "collection": "userconfigs",
     "roles": [
         {
-            "name": "owner",
-            "apply_when": {
-                "owner": "%%user.id"
-            },
-            "insert": true,
-            "delete": true,
-            "read": true,
-            "write": true,
-            "fields": {},
-            "additional_fields": {}
+          "name": "owner",
+          "apply_when": {
+            "owner": "%%user.id"
+          },
+          "insert": true,
+          "delete": true,
+          "read": true,
+          "write": true,
+          "fields": {},
+          "additional_fields": {}
         },
         {
             "name": "anonymous",
             "apply_when": {},
-            "fields": {
-                "darkMode": {
-                    "read": true
-                },
-                "ignoreCreditor": {
-                    "read": true
-                },
-                "ignoreIBAN": {
-                    "read": true
-                },
-                "onboardingDone": {
-                    "read": true
-                },
-                "owner": {
-                    "read": true
-                },
-                "userCategories": {
-                    "read": true
-                }
-            },
-            "write": false,
             "insert": false,
             "delete": false,
+            "read": true,
+            "write": false,
+            "fields": {},
             "additional_fields": {}
-        }
-    ],
-    "filters": [],
-    "schema": {
-        "title": "userconfig",
-        "properties": {
-            "_id": {
-                "bsonType": "objectId"
-            },
-            "darkMode": {
-                "bsonType": "bool"
-            },
-            "ignoreCreditor": {
-                "bsonType": "string"
-            },
-            "ignoreIBAN": {
-                "bsonType": "string"
-            },
-            "onboardingDone": {
-                "bsonType": "bool"
-            },
-            "owner": {
-                "bsonType": "string"
-            },
-            "userCategories": {
-                "bsonType": "string"
-            }
-        }
-    }
+          }
+      ],
+      "filters": [],
+      "schema": {}
 }
