@@ -10,23 +10,8 @@
             "insert": true,
             "delete": true,
             "read": true,
-            "fields": {
-                "darkMode": {
-                    "write": true
-                },
-                "ignoreCreditor": {
-                    "write": true
-                },
-                "onboardingDone": {
-                    "write": true
-                },
-                "owner": {
-                    "write": true
-                },
-                "userCategories": {
-                    "write": true
-                }
-            },
+            "write": true,
+            "fields": {},
             "additional_fields": {}
         }
     ],
