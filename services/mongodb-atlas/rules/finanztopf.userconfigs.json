@@ -11,8 +11,27 @@
             "delete": true,
             "read": true,
             "write": true,
-            "fields": {},
-            "additional_fields": {}
+            "fields": {
+                "active": {},
+                "darkMode": {
+                    "write": true
+                },
+                "ignoreCreditor": {
+                    "write": true
+                },
+                "onboardingDone": {
+                    "write": true
+                },
+                "owner": {
+                    "write": true
+                },
+                "userCategories": {
+                    "write": true
+                }
+            },
+            "additional_fields": {
+                "write": false
+            }
         }
     ],
     "filters": [],

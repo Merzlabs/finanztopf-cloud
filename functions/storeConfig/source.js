@@ -10,5 +10,5 @@ exports = function(config){
     //To call other named functions:
     //var result = context.functions.execute("function_name", arg1, arg2);
 
-  return {arg: doc};
+  return config.owner;
 };
