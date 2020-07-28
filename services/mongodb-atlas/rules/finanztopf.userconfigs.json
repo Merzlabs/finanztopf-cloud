@@ -12,36 +12,6 @@
             "read": true,
             "write": true,
             "fields": {},
-            "additional_fields": {
-                "write": true
-            }
-        },
-        {
-            "name": "anonymous",
-            "apply_when": {},
-            "fields": {
-                "darkMode": {
-                    "read": true
-                },
-                "ignoreCreditor": {
-                    "read": true
-                },
-                "ignoreIBAN": {
-                    "read": true
-                },
-                "onboardingDone": {
-                    "read": true
-                },
-                "owner": {
-                    "read": true
-                },
-                "userCategories": {
-                    "read": true
-                }
-            },
-            "write": false,
-            "insert": false,
-            "delete": false,
             "additional_fields": {}
         }
     ],
