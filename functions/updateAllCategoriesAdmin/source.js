@@ -4,8 +4,12 @@ exports = function(docs){
   try {
     if (activeUser.data.email && activeUser.data.email.indexOf("@merzlabs.com") > 0) {
       var collection = context.services.get("mongodb-atlas").db("finanztopf").collection("categories");
-      var res = collection.updateMany({}, docs);
-      return res;
+      
+      for(let doc of docs) {
+        collection.updateOne({id: doc.id}, {"$set": doc});
+      }
+
+      return "Done";
     } else {
       throw Error("This user is not allowed to execute the system function")
     }
