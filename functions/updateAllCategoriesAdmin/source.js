@@ -5,7 +5,8 @@ exports = function(docs){
     if (activeUser.data.email && activeUser.data.email.indexOf("@merzlabs.com") > 0) {
       var collection = context.services.get("mongodb-atlas").db("finanztopf").collection("categories");
       
-      for(let doc of docs) {
+      for(let i = 0; i < docs.length; i++) {
+        const doc = docs[i];
         collection.updateOne({id: doc.id}, {"$set": doc});
       }
 
