@@ -7,6 +7,7 @@ exports = function(docs){
       
       for(let i = 0; i < docs.length; i++) {
         const doc = docs[i];
+        delete doc._id;
         collection.updateOne({id: doc.id}, {"$set": doc});
       }
 
