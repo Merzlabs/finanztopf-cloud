@@ -1,0 +1,15 @@
+{
+    "name": "local-userpass",
+    "type": "local-userpass",
+    "config": {
+      "autoConfirm": false,
+      "emailConfirmationUrl": "https://finanztopf.pecuniator.com/user/confirm",
+      "confirmEmailSubject": "Bitte bestätigen Sie ihren Account",
+      "runConfirmationFunction": true,
+      "confirmationFunctionName": "confirmAdminUser",
+      "resetPasswordUrl": "https://finanztopf.pecuniator.com/user/reset",
+      "resetPasswordSubject": "Password reset",
+      "runResetFunction": false
+    },
+    "disabled": false
+  }
