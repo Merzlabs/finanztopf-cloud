@@ -5,6 +5,7 @@ exports = function(category){
 
     //Accessing a mongodb service:
     var collection = context.services.get("mongodb-atlas").db("finanztopf").collection("categories");
+    category.active = false;
     var doc = collection.insertOne(category);
 
     //To call other named functions:
