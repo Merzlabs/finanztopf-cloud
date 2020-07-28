@@ -30,7 +30,7 @@
             }
           },
         {
-            "name": "non-owner",
+            "name": "anonymous",
             "apply_when": {},
             "fields": {
                 "creditorName": {

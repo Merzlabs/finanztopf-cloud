@@ -1,9 +1,8 @@
 exports = function(){
   const activeUser = context.user;
 
-  const ids = activeUser.identities[0];
   try {
-    if (ids && ids.data.email.indexOf("@merzlabs.com")) {
+    if (activeUser.data.email && activeUser.data.email.indexOf("@merzlabs.com") > 0) {
       var collection = context.services.get("mongodb-atlas").db("finanztopf").collection("categories");
       var docs = collection.find({});
       return docs;
