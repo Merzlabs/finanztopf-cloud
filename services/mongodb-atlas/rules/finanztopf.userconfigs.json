@@ -10,9 +10,7 @@
             "insert": true,
             "delete": true,
             "read": true,
-            "write": true,
             "fields": {
-                "active": {},
                 "darkMode": {
                     "write": true
                 },
@@ -29,9 +27,7 @@
                     "write": true
                 }
             },
-            "additional_fields": {
-                "write": false
-            }
+            "additional_fields": {}
         }
     ],
     "filters": [],
