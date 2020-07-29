@@ -1,7 +1,7 @@
 exports = async function(){
   const ip = context.request.remoteIPAddress;
   const userAgent = context.request.httpUserAgent;
-  const headers = {"Authorization": `Bearer ${context.values.get("KLARNA_TOKEN")}`}
+  const headers = {"Authorization": [`Bearer ${context.values.get("KLARNA_TOKEN")}`]}
 
   const response = await context.http.put({
     url: "https://api.playground.openbanking.klarna.com/xs2a/v1/sessions",
