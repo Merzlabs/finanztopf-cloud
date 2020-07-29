@@ -1,4 +1,4 @@
-exports = function(){
+exports = async function(){
   const ip = context.request.remoteIPAddress;
   const userAgent = context.request.httpUserAgent;
   const headers = {"Authorization": `Bearer ${context.values.get("KLARNA_TOKEN")}`}
