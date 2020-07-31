@@ -7,5 +7,5 @@ exports = async function(url){
     headers: headers
   })
   // The response body is a BSON.Binary object. Parse it and return.
-  return EJSON.parse(response.body.text());
+  return EJSON.parse(response.body ? response.body.text() : 'Done');
 };
